@@ -1,0 +1,503 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.line1{
+    display:flex;
+    width: 100%;
+    background-color: #6767f8;
+    height:50px;
+    position: static;
+    z-index:100;
+    justify-content: center;
+    align-items: center;
+}
+.name1{
+    font-size:30px;
+    color:white;
+}
+.links1{
+    display:flex;
+    margin-left:50%;
+}
+.links1 a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+
+.login{
+    padding-left:30px;
+}
+
+a{
+    text-decoration:none;
+}
+
+.nvb{
+    
+    z-index:10000;
+    height:55px;
+    width:100%;
+    border: 2px solid black;
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+
+.drop-down1{
+    display:none;
+    position:absolute;
+    width:150px;
+
+    /* height:60px; */
+    border:5px solid #bdc3c7;
+    border-top: 4px solid #6767f8;
+    border-radius:10px;;
+    background-color: white;
+}
+.about:hover .drop-down1 {
+    display:block;
+}
+
+.drop-down2{
+    display:none;
+    position:absolute;
+    width:350px;
+    border:5px solid #bdc3c7;
+    border-top: 4px solid #6767f8;
+    border-radius:10px;;
+    background-color: white;
+}
+.drop-down2 a:hover{
+    background-color: rgb(197, 197, 250);
+}
+.aca2 ,  .admission {
+    width:200px;
+    font-size:1rem;
+}
+.aca2 p,  .admission p{
+    color:BLUE;
+    font-weight:500;
+    font-size:30px;
+}
+
+.aca2 a,  .admission a{
+    color:black;
+}
+
+.academic:hover .drop-down2{
+    display:flex;
+    justify-content: space-evenly;   
+}
+
+.drop-down4{
+    padding-right: 3rem;
+    padding-top:10px;
+    padding-bottom:10px;
+    border : 5px solid #bdc3c7;
+    border-radius:10px;
+    background-color: #ffffff;
+    border-top: 4px solid #6767f8;
+    display:none;
+}
+.drop-down4 a{
+    color:black;
+    font-weight: 500;
+}
+
+.offices:hover .drop-down4 {
+    display:block;   
+    /* position: fixed; */
+}
+
+.drop-down3 a{
+    color:black;
+}
+.drop-down3{
+    border : 5px solid #bdc3c7;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius:10px;
+    border-top: 4px solid #6767f8;
+    background-color:white;
+    position: absolute;
+    display: none;
+}
+
+.admnstr:hover .drop-down3{
+    display:block;
+    /* position: fixed; */
+}
+
+.logo-img{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    background-color: #dff9fb;
+    background-image: url("image_logo.png");
+    background-size: cover;
+    background-position: center;
+    border:2px solid white;
+    animation-name: logoAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinte;
+    animation-direction: normal ;
+}
+
+@keyframes  logoAnimation {
+    from{
+        height:100px;
+        width:100px;
+    }
+    to{
+        height:80px;
+        width:80px;
+        /* bottom:0px; */
+    }
+}
+
+
+
+
+.drop-down-sc{
+    border : 5px solid #bdc3c7;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius:10px;
+    border-top: 4px solid #6767f8;
+    position: relative;
+    /* left:230px; */
+    display: none;
+    z-index: 1000;
+}
+
+.science:hover .drop-down-sc{
+    display:block;
+}
+
+
+.drop-down-eng{
+     border : 5px solid #bdc3c7;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius:10px;
+    border-top: 4px solid #6767f8;
+    position: relative;
+    /* display: none; */
+    z-index: 1000;
+}
+.engineering:hover .drop-down-eng{
+    display: block;
+}
+/* ___________________________________________ */
+
+.drop-down6{
+    border : 5px solid #bdc3c7;
+    border-top: 4px solid #6767f8;
+    border-radius:10px;
+    background-color: white;
+    padding:10px;
+    position:absolute;
+    display:none;
+    z-index: 999;
+}
+
+
+.faculties:hover .drop-down6{
+    /* position: fixed; */
+    display:block;
+}
+.overview:hover{
+    background-color:lightblue ;
+}
+.act-rule:hover{
+    background-color: lightblue;
+}
+.mathdpt:hover{
+    background-color: lightblue;
+}
+.cse:hover{
+    background-color: lightblue;
+}
+.stat:hover{
+    background-color:lightblue;
+}
+.phy:hover{
+    background-color: lightblue;
+}
+.vc:hover , .offices:hover ,.ofvc:hover , .cent-library:hover,
+.off-registrar:hover,.hall-residence:hover
+{
+    background-color: lightblue;
+}
+
+/* _______________________________________________ */
+/* ________________end of navbar_______________ */
+
+.img2{
+    width:100%;
+    height:25rem;
+    /* border:5px solid black; */
+    background-image: url("university_image .jpg");
+    background-size: cover;
+    background-position:center;
+    background-color: gray;
+    
+    animation-name:uiversityImage;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+}
+@keyframes uiversityImage
+{
+    from{
+        height: 23rem;
+        width:98%;
+    }
+    to{
+        height:25rem;
+        width:100%;
+    }
+}
+
+/* ___________bocx3___________________________ */
+
+.bdy3{
+    width:80rem;
+    border: 2px  solid #ecf0f1;
+    border-radius: 10px;;
+    position: absolute;
+    left:2%;
+    margin-top:100px;
+    box-shadow:4px 4px 10px 6px #ecf0f1;
+}
+
+.img-bdy3{
+    margin:20px;
+    height:10rem;
+    width:10rem;
+    border-radius: 10px;
+    border:5px solid gray;
+    background-image: url("https://www.bu.ac.bd/uploads/vice_chancellor/17477139863338.jpg");
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    top:-5rem;
+
+}
+.txt-bdy3{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height:20rem;
+    background-color: white;
+    margin: 30px;
+}
+
+.text1-bdy3,.text3-bdy3{
+    font-size: 30px;
+    font-weight: 600;
+    margin:5px;
+}
+
+.text2-bdy3 , .text4-bdy3{
+    font-family: fantasy;
+    margin:10px;
+    font-weight: 500;
+    color:#2c3e50;
+}
+
+.text4-bdy3{
+    margin-top: 0px;
+}
+
+
+/* ___________________________________________________________________ */
+/* _________________________footer  ___________________________ */
+
+.first{
+    position: absolute;
+    top:65rem;
+    display:flex;
+    justify-content: space-evenly;
+     background-color:#2c3e50;
+      width:100%;
+}
+.one{
+    display:flex;
+}
+.uni-info{
+    margin-left: 50px;
+    color:#bdc3c7;
+}
+.uni-line1,.add-line1,.three-line1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom:30px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.links{
+    margin-top:30px;
+}
+.add-line1{
+    margin-left: 50px;
+}
+
+.add-links{
+    display: flex;
+    flex-direction: column;
+}
+.add-links a{
+    margin-left:70px;
+    color:#bdc3c7;
+}
+
+.three a{
+    color:#bdc3c7;
+}
+
+.second{
+    width:100%;
+    background-color:#34495e ;
+    position:absolute;
+    top:77rem;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family:fantasy;
+}
+
+.login-img{
+    
+    width:100%;
+    height:60rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url("university_image .jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.frmm{
+    background-color: white;
+    /* height:40rem; */
+    width:40rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    margin:100px;
+}
+.frmm-logo{
+    height:6rem;
+    width:6rem;
+    border:3px solid white;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("image_logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.lgn-line1{
+    font-weight: 600;
+    font-size:30px;
+    font-family:monospace;
+}
+.lgn-line2{
+    font-size:20px;
+}
+.lgn-frm{
+    align-self: flex-start;
+    margin-left:auto;
+    margin-right: auto;
+}
+.mail{
+    margin-top:30px;
+}
+.pass-login{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.lgn-frm a{
+    margin-left: 100px;
+    text-decoration: underline;
+    margin-bottom:100px;
+}
+.lgn-submit input{
+    margin:70px;
+    font-size: 20px;
+    width:10rem;
+    background-color: #6767f8;
+    color:white;
+    font-weight:700;
+    border-radius: 10px;
+}
+
+.cnt-one{
+    width:100%;
+    height:10rem;
+    background-image:url("university_image .jpg");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cnt-line1{
+    color:white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.cnt-two{
+    display:flex;
+    border:2px solid #95afc0;
+    width:60rem;
+    justify-content: space-around;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    background-color:white;
+    color:#30336b;
+    border-radius: 10px;
+    border-top: 5px solid #4834d4;
+    box-shadow: 4px 4px 10px 10px #95afc0;
+}
+
+.cnt-line11, .cnt-line21{
+    font-size:30px;
+    font-weight:600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.cnt-line12,.cnt-line14, .cnt-line16, .cnt-line18{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.cnt-line22{
+    margin-top:20px;
+    font-size:20px;
+    font-weight: 600;
+}
+
+.cnt-line19{
+    margin-bottom:20px;
+}
